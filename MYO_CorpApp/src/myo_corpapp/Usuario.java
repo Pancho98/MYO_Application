@@ -12,13 +12,15 @@ package myo_corpapp;
 public class Usuario {
     String username;
     String contraseña;
+    String nombre;
 
     public Usuario() {
     }
 
-    public Usuario(String username, String contraseña) {
+    public Usuario(String username, String contraseña, String nombre) {
         this.username = username;
         this.contraseña = contraseña;
+        this.nombre = nombre;
     }
 
     public String getUsername() {
