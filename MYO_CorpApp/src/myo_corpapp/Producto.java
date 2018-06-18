@@ -9,7 +9,7 @@ package myo_corpapp;
  *
  * @author Francisco Santos
  */
-public class Producto {
+public class Producto extends Categoria{
     String nombre;
     String descripcion;
     String area;
