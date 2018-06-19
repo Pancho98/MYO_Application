@@ -59,6 +59,11 @@ public class Options extends javax.swing.JFrame {
 
         jb_inventario.setFont(new java.awt.Font("Lucida Grande", 0, 48)); // NOI18N
         jb_inventario.setText("Inventario");
+        jb_inventario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jb_inventarioMouseClicked(evt);
+            }
+        });
 
         jb_entrada.setFont(new java.awt.Font("Lucida Grande", 0, 48)); // NOI18N
         jb_entrada.setText("Entrada");
@@ -152,6 +157,10 @@ public class Options extends javax.swing.JFrame {
         // TODO add your handling code here:
         new MainWindow().Signout();
     }//GEN-LAST:event_jb_salirMouseClicked
+
+    private void jb_inventarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_inventarioMouseClicked
+        new Inventario().ReceiveUser(user);
+    }//GEN-LAST:event_jb_inventarioMouseClicked
 
     /**
      * @param args the command line arguments
